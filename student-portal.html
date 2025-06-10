@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/student-portal.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Student Portal</h1>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+       <li><a href="about.html" class="active">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="lecturers.html">Lecturers</a></li>
+        <li><a href="student-portal.html">Student Portal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+  <h2>Student Login</h2>
+<form class="login-form">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required oninput="checkPasswordStrength()">
+
+  <div id="strengthMessage"></div>
+
+  <button type="submit">Login</button>
+</form>
+
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Global University</p>
+  </footer>
+
+
+<script src="student-portal.js"></script>
+
+</body>
+</html>
